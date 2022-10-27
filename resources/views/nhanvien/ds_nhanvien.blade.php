@@ -12,7 +12,21 @@
                      </div>
 </div>
 </br>
-<div> <a href="" class=" btn btn-primary"><i class="btn-icon-only icon-edit">Thêm mới</i></a> <br></div> 
+
+<div>
+<div class="form-row"> <!--thuộc tính form-row nó giúp chia 2 cột trên 1 row của nó-->
+<div class="col-lg-3">
+   <form class="form-inline" action="{!! route('timkiem_dsnhanvien')!!}" method="GET">
+             <input class="form-control mr-1 font-italic" type="search" name="timkiem_dsnhanvien" placeholder="Tìm theo tên" aria-label="Search">
+             <button class="btn btn-danger" type="submit"><i class="fa fa-search" style="width:18px; font-size:18px;"></i></button>
+  </form>
+</div>
+<div class="col-lg-3">
+    <a href="{!! URL::route('them_nv')!!}" class=" btn btn-primary"><i class="btn-icon-only icon-edit">Thêm mới</i></a>
+</div>
+</div>
+<br>
+       
                    <div class="card-body overflow-x:auto ">
                    @if(Session::has('thongbao'))
                       <div class="alert alert-success">
@@ -44,14 +58,12 @@
                                         <td>{{$sv->ten_cv}}</td>
                                         <td>{{$sv->diachi_nv}}</td>
                                         <td>{{$sv->gioitinh_nv}}</td>
-                                        <td>{{$sv->ma_hd}}</td>
+                                        <td>{{$sv->diachi_nv}}</td>
                                         <td class="td-actions">
-                                        <a href="" class="btn-sm btn-primary"><i class="btn-icon-only icon-edit">Xem</i></a>           
-                        <a href="" class="btn-sm btn-primary"><i class="btn-icon-only icon-edit">Sửa</i></a>
+                                        <a href="{!! URL::route('chitiet_nhanvien',$sv->id)!!}" class="btn-sm btn-primary"><i class="btn-icon-only icon-edit">Xem Chi Tiết</i></a>           
+                      
 
-                        <a href="" class="btn-sm btn-danger">
-                            <i class="btn-icon-only icon-remove">Xóa</i>
-                        </a>
+                       
                        
                     </td>
                                      </tr>
@@ -61,14 +73,15 @@
                                </table>
                              <!--code gọi phân trang-->
                              {{$result->links("pagination::bootstrap-4")}}
-                 
+                             <br>
+           <div> <a href="{!! URL::route('nhanvien')!!}" class=" btn btn-primary"><i class="btn-icon-only icon-edit">Quay Lại</i></a> <br></div>   
+           </div>
                   
                  
                  </div >   
               </div>
-           </div>
-           
-
+             
+          
       
        @endsection
 

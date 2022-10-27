@@ -9,7 +9,7 @@ class ChucvuController extends Controller
 {
     public function chucvu()
         {
-            $chucvu=DB::table('chucvu')->paginate(3);        
+            $chucvu=DB::table('chucvu')->paginate(5);        
             return view('chucvu.chucvu',compact('chucvu'));
             
         }
