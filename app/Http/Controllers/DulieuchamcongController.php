@@ -143,7 +143,11 @@ class DulieuchamcongController extends Controller
                //dd($data_cc);
                $data_hd=DB::table('hopdong')
                ->join('nhanvien','nhanvien.ma_nv','=','hopdong.ma_nv')
+<<<<<<< HEAD
                ->select('hopdong.heso_luong','hopdong.phu_cap',)
+=======
+               ->select('hopdong.heso_luong','hopdong.phu_cap')
+>>>>>>> b501b58e6c60598c36c69ec9fbf7dfa4d21ab824
                ->where('nhanvien.ma_nv',$code)
                ->first();
                $data_pn=DB::table('phepnam')
@@ -151,6 +155,7 @@ class DulieuchamcongController extends Controller
                ->select('phepnam.*')
                ->where('nhanvien.ma_nv',$code)
                ->first();
+<<<<<<< HEAD
                $data_bh=DB::table('baohiem')
                ->join('nhanvien','nhanvien.ma_nv','=','baohiem.ma_nv')
                ->select('baohiem.tiendong_bhxh')
@@ -169,6 +174,10 @@ class DulieuchamcongController extends Controller
                ->first();              
               return view('chamcong.chitiet_bangluong',compact('data_nv','data_cc','data_hd','data_pn','data_bh','data_kt','data_kl'));
               
+=======
+              return view('chamcong.chitiet_bangluong',compact('data_nv','data_cc','data_hd','data_pn'));
+
+>>>>>>> b501b58e6c60598c36c69ec9fbf7dfa4d21ab824
 
           }
       

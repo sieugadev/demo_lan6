@@ -14,7 +14,11 @@
     <!-- Custom fonts for this template-->
     <link rel="stylesheet" href="{{asset('/css/bootstrap.min.css') }}">
           <link rel="stylesheet" href="{{ asset('/css/main.css') }}">
+<<<<<<< HEAD
     <link href="{{asset('js/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+=======
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+>>>>>>> b501b58e6c60598c36c69ec9fbf7dfa4d21ab824
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link
@@ -46,12 +50,43 @@
            
             <!-- Divider -->
             <hr class="sidebar-divider">
+<<<<<<< HEAD
               <!-- Nav Item - Utilities Collapse Menu -->
               <li class="nav-item">
                 <a class="nav-link collapsed" href="{!!URL::route('bangluong')!!}" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-address-card"></i>
                     <span>Quản Lý Nhân Viên</span>
+=======
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Interface
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="{!!URL::route('getform')!!}" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Kết Nối Dữ Liệu Chấm Công</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="buttons.html">Buttons</a>
+                        <a class="collapse-item" href="cards.html">Cards</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="{!!URL::route('bangluong')!!}" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Quản Lý Bảng Lương</span>
+>>>>>>> b501b58e6c60598c36c69ec9fbf7dfa4d21ab824
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
@@ -352,8 +387,14 @@
                                    
                                 </span>
                                 <img class="img-profile rounded-circle"
+<<<<<<< HEAD
                                     src="images/{{Auth::user()->avatar}}"> 
                                   
+=======
+                                    src="{{asset('/images/sieuga.jpg')}}"> 
+                                    <img class="img-profile rounded-circle"
+                                    src="{{asset('/images/logout.png')}}"> 
+>>>>>>> b501b58e6c60598c36c69ec9fbf7dfa4d21ab824
                                     </a>
                                   
                                     

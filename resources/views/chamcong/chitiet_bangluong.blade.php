@@ -50,11 +50,17 @@ use Illuminate\Support\Str;
                             <input id="current-pass-control" name="txt_ma_hd" class="form-control" type="text" value="{!! floor($data_cc->total) !!}" readonly="readonly">
                        
                         <label>Phụ cấp: </label>
+<<<<<<< HEAD
                              <input id="current-pass-control" name="txt_ma_hd" class="form-control" type="text" value="{!! number_format($data_hd->phu_cap),''!!} VND" readonly="readonly">
                         <label>Khen Thưởng: </label>                       
                              <input id="current-pass-control" name="txt_ma_hd" class="form-control" type="text" value="{!! (!empty($data_kt->sotien) ? number_format($data_kt->sotien). ' VND' : 'Đang cập nhật') !!}" readonly="readonly">
                         
                      
+=======
+                             <input id="current-pass-control" name="txt_ma_hd" class="form-control" type="text" value="{!! $data_hd->phu_cap!!}" readonly="readonly">
+                        <label>Khen Thưởng: </label>
+                             <input id="current-pass-control" name="txt_ma_hd" class="form-control" type="text" value="" readonly="readonly">
+>>>>>>> b501b58e6c60598c36c69ec9fbf7dfa4d21ab824
                         <label>Tổng phép năm </label>
                         @if($data_pn->ngay_ketthuc)
                              <input id="current-pass-control" name="txt_ma_hd" class="form-control" type="text" value="{!! floor(Carbon::parse($data_pn->ngay_ketthuc)->diffInDays(Carbon::parse($data_pn->ngay_batdau))/30) !!}" readonly="readonly">
@@ -66,6 +72,7 @@ use Illuminate\Support\Str;
                     </div>
                     <div class="col">
                         <label>Lương cơ bản:</label>
+<<<<<<< HEAD
                             <input id="current-pass-control" name="txt_ngayvaolam" class="form-control" type="text" value="{!! number_format($data_hd->heso_luong),''!!} VND" readonly="readonly">
                         
                         <label>Đóng Bảo Hiểm Xã Hội: </label>
@@ -76,6 +83,18 @@ use Illuminate\Support\Str;
                              <input id="current-pass-control" name="txt_ma_hd" class="form-control" type="text" value="{!! $data_pn->phepnam_dadung !!}" readonly="readonly">
                              <label>Thực lãnh: </label>
                              <input id="current-pass-control" name="txt_ma_hd" class="form-control" type="text" value="{!! number_format(floor($data_hd->heso_luong/26*$data_cc->total)+$data_hd->phu_cap+(!empty($data_kt->sotien) ? $data_kt->sotien : '0')-($data_bh->tiendong_bhxh+ (!empty($data_kl->sotien) ? $data_kl->sotien : '0') )),'' !!} VND" readonly="readonly">                            
+=======
+                            <input id="current-pass-control" name="txt_ngayvaolam" class="form-control" type="text" value="{!! number_format($data_hd->heso_luong),0,''!!} VND" readonly="readonly">
+                        
+                        <label>Đóng Bảo Hiểm Xã Hội: </label>
+                             <input id="current-pass-control" name="txt_ma_hd" class="form-control" type="text" value="" readonly="readonly">  
+                         <label>Kỷ luật: </label>
+                             <input id="current-pass-control" name="txt_ma_hd" class="form-control" type="text" value="" readonly="readonly"> 
+                        <label>Phép năm đã dùng: </label>
+                             <input id="current-pass-control" name="txt_ma_hd" class="form-control" type="text" value="{!! $data_pn->phepnam_dadung !!}" readonly="readonly">
+                             <label>Thực lãnh: </label>
+                             <input id="current-pass-control" name="txt_ma_hd" class="form-control" type="text" value="" readonly="readonly">                            
+>>>>>>> b501b58e6c60598c36c69ec9fbf7dfa4d21ab824
                     </div>             
                     </div>
 </div>
