@@ -7,6 +7,9 @@ use App\Http\Controllers\PhongbanController;
 use App\Http\Controllers\HopdongController;
 use App\Http\Controllers\BaohiemController;
 use App\Http\Controllers\ChucvuController;
+use App\Http\Controllers\ApiController;
+use App\Http\Controllers\ExcelController;
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,9 +21,15 @@ use App\Http\Controllers\ChucvuController;
 |
 */
 //Danh mục Nhân Viên
+Route::group(['middleware'=>'auth'],function()
+{
+  Route::get('/nhanvien',[NhanvienController::class,'nhanvien'])
+  ->name('nhanvien');
 
- Route::get('/',[NhanvienController::class,'nhanvien'])
- ->name('nhanvien');
+});
+
+ Route::get('/count',[NhanvienController::class,'count'])
+ ->name('count');
  Route::get('/thongkenhanvien',[NhanvienController::class,'thongke_nhanvien'])
  ->name('thongke_nhanvien');
   Route::get('/themnhanvien',[NhanvienController::class,'them_nv'])
@@ -113,6 +122,32 @@ Route::get('/xoachucvu/{id}',[ChucvuController::class,'xoa_cv'])
     ->name('capnhat_bhxh');
     Route::get('/xoa/{id}',[BaohiemController::class,'xoa_bhxh'])
     ->name('xoa_bhxh');
+    
+
+    // //Api controller
+    // Route::group(['prefix'=>'api',],function()
+    // {
+    //      Route::get('nhanvien_api',[ApiController::class,'nhanvien_api'])
+    // ->name('nhanvien_api');
+    // });
+
+
+    //Import_Excel
+    Route::get('getform', [ExcelController::class,'getform'])
+    ->name('getform');  
+    Route::post('import', [ExcelController::class,'import'])
+    ->name('import');  
+
+    //Đăng nhập
+    Route::get('/',[AdminController::class,'dangnhap'])
+    ->name('dangnhap');
+    Route::get('dangky',[AdminController::class,'dangky'])
+    ->name('dangky');
+    Route::get('thoat',[AdminController::class,'thoat'])
+    ->name('thoat');
+    Route::post('xulydangnhap',[AdminController::class,'xulydangnhap'])
+    ->name('xulydangnhap');
+ 
  
 
 

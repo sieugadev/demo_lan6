@@ -12,7 +12,7 @@
                      </div>
 </div>
 </br>
-<div> <a href="{!! URL::route('them_nv')!!}" class=" btn btn-primary"><i class="btn-icon-only icon-edit">Thêm mới</i></a> <br></div> 
+<div> <a href="" class=" btn btn-primary"><i class="btn-icon-only icon-edit">Thêm mới</i></a> <br></div> 
                    <div class="card-body">
                   
                    @if(Session::has('thongbao'))
@@ -25,29 +25,26 @@
                                          </tr >
                                           
                                            <th align="center">MÃ NHÂN VIÊN</th>
-                                           <th align="center">HỌ TÊN NHÂN VIÊN</th>
-                                           <th align="center">ĐỊA CHỈ</th>
-                                           <th align="center">GIỚI TÍNH</th>
-                                           <th align="center">ĐỊA CHỈ</th>
+                                          
+                                         
                                            <th align="center">TONG CONG</th>
                                            <th align="center">TÙY CHỈNH</th>
                                           </tr>
                                      </thread>
                                     
                                      <tbody>
-                                     @foreach ($nhanvien as $sv)
+                                     @foreach ($data as $sv)
                                      <tr>
                                      
                                         <td>{{$sv->ma_nv}}</td>
-                                        <td>{{$sv->hoten_nv}}</td>
-                                        <td>{{$sv->diachi_nv}}</td>
-                                        <td>{{$sv->gioitinh_nv}}</td>
-                                        <td>{{$sv->sdt_nv}}</td>
-                                        <td>{{$sv->gio_ra -$sv->gio_vao}}</td>
+                                        <td>{{$sv->total}}</td>
+                                      
+                                       
+                                        
                                         <td class="td-actions">
-                        <a href="{!! URL ::route('sua_nv',$sv->id)!!}" class="  btn btn-primary"><i class="btn-icon-only icon-edit">Sửa</i></a>
+                        <a href="" class="  btn btn-primary"><i class="btn-icon-only icon-edit">Sửa</i></a>
 
-                        <a href="{!! URL ::route('xoa_nv',$sv->id)!!}" class="  btn btn-danger">
+                        <a href="" class="  btn btn-danger">
                             <i class="btn-icon-only icon-remove">Xóa</i>
                         </a>
                     </td>
@@ -56,8 +53,7 @@
                                    
                                     </tbody>
                                </table>
-                             <!--code gọi phân trang-->
-                             {{$nhanvien->links("pagination::bootstrap-4")}}
+                          
                  
                   
                  

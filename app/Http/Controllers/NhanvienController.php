@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Nhanvien;
 use DB;
+use Carbon\Carbon;
+use DateTime;
 class NhanvienController extends Controller
 {
     //list danh sách nhân viên
@@ -13,6 +15,45 @@ class NhanvienController extends Controller
         $nhanvien=nhanvien::paginate(3);
            
          return view('nhanvien.nhanvien',compact('nhanvien'))->with('i',(request()->input('page',1)-1)*3);
+   }
+
+   public function count()
+   {
+   // $day1= DateTime::createFromFormat('m-d-Y', '2022-10-15');
+   // $day2= DateTime::createFromFormat('m-d-Y', '2022-10-10');
+   // $day=$day1-$day2;
+   //$day1 = strtotime('8:00:04');
+   // $day2 = strtotime('17:33:04');
+    //$day1 = strtotime('ngay_vao');
+   // $day2 = strtotime('ngay_ra');
+  //      $day=$day2-$day1;
+  //   dd(floor(($day/3600)-1.5)/8);
+    //     $data= DB::table('nhanvien')
+    //     ->first();
+    //     $day1=strtotime($data->ngay_vao);
+    //     $day2=strtotime($data->ngay_ra);
+    //    // $day=$day2-$day1;
+    //  //   dd($day1);
+     $data= DB::table('nhanvien')   
+  ->select('ma_nv',DB::raw('sum((ngay_ra) - (ngay_vao)) as total'))
+  // // $data=$data->select('ma_nv',DB::raw('sum(gio_ra-gio_vao) as total'))
+     
+      ->groupBy('ma_nv')
+     ->get();
+     dd($data);
+  // //     return view('nhanvien.count',compact('data'));
+    
+   }
+   public function count1()
+   {
+      
+      
+    //   $data= DB::table('nhanvien')
+  
+    //  ->groupBy('ma_nv')
+    //  ->get();
+    //  return view('nhanvien.count',compact('data'));
+     //dd($data);
    }
    //thêm nhân viên mới
    public function them_nv()

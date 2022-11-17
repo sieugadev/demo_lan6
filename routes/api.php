@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ApiController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -17,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+//Demo api in laravel
+Route::get('/nhanvien',[ApiController::class,'nhanvien'])
+->name('api.baohiem');
+Route::get('/hopdong',[ApiController::class,'hopdong'])
+->name('api.hopdong');
+Route::get('/baohiem',[ApiController::class,'baohiem'])
+->name('api.baohiem');
