@@ -18,9 +18,23 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 //Demo api in laravel
+<<<<<<< HEAD
 Route::get('/nhanvien',[ApiController::class,'nhanvien'])
 ->name('api.baohiem');
 Route::get('/hopdong',[ApiController::class,'hopdong'])
 ->name('api.hopdong');
 Route::get('/baohiem',[ApiController::class,'baohiem'])
 ->name('api.baohiem');
+=======
+// Route::get('/nhanvien',[ApiController::class,'nhanvien'])
+// ->name('api.nhanvien');
+// Route::post('/luunhanvien',[ApiController::class,'luu_nhanvien'])
+// ->name('api.nhanvien');
+Route::resource('nhanvien',ApiController::class);
+
+
+Route::get('/hopdong',[ApiController::class,'hopdong'])
+->name('api.hopdong');
+Route::get('/baohiem',[ApiController::class,'baohiem'])
+->name('api.baohiem');
+>>>>>>> 16af195cfcd85fbf52c7291857f06d2ffc54d44a

@@ -18,19 +18,33 @@
         
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
        
         <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+=======
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
+>>>>>>> 16af195cfcd85fbf52c7291857f06d2ffc54d44a
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </head>
     <body class="bg-info">
+<<<<<<< HEAD
     <form method="POST" action="{{ URL::route('xulydangnhap')}}">
     <input type="hidden" name="_token" value="{!! csrf_token() !!}" />
 <section  style=""><!--section có thể chọn được màu -->
   <div class="container" style="margin-top: 300px;" >
     
     <div class=" row d-flex justify-content-center align-items-center  ">
+=======
+    <form method="POST" action="{{URL::route('xulydangnhap')}}">
+    <input type="hidden" name="_token" value="{!! csrf_token() !!}" />
+<section  style=""><!--section có thể chọn được màu-->
+  <div class="container" style="margin:150px;">
+    
+    <div class="row d-flex justify-content-center align-items-center ">
+>>>>>>> 16af195cfcd85fbf52c7291857f06d2ffc54d44a
       <div class="col-12 col-md-8 col-lg-6 col-xl-5">
         <div class="card shadow-2-strong" style="border-radius: 1rem;">
           <div class="card-body p-5 text-center">
@@ -57,7 +71,11 @@
                                <label class="form-label" for="typePasswordX-2"><h5>Mật Khẩu</h5></label>
                      </div> 
                      <div class="col-md-8">
+<<<<<<< HEAD
                               <input type="pass" name="pass" class="form-control form-control-lg" />
+=======
+                              <input type="password" name="pass" class="form-control form-control-lg" />
+>>>>>>> 16af195cfcd85fbf52c7291857f06d2ffc54d44a
                        </div>
                  </div>
 
@@ -71,7 +89,11 @@
       -->
             
             <button class="btn btn-primary btn-lg btn-block" type="submit" name="submit">Xác Nhận</button>
+<<<<<<< HEAD
            
+=======
+            <a href="{{ URL::route('dangky') }}" class="btn btn-danger btn-lg btn-block"><i class="icon-remove"></i>&nbsp&nbspĐăng Ký&nbsp&nbsp</a>
+>>>>>>> 16af195cfcd85fbf52c7291857f06d2ffc54d44a
        <!-- 
         <input type="submit" name="submit" value="Đang Nhập"/>
 
