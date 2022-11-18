@@ -1,7 +1,7 @@
 @extends('layout.main')
 @section('main_body')
 
-             không có gì cả
+             sao lại không có gì chứ
 
        @endsection
 
