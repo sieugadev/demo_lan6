@@ -1,0 +1,36 @@
+* { margin: 0; padding: 0 }
+body { font: 13px arial }
+#wrapper { width: 800px; margin: 0 auto; margin-top: 50px }
+#slide-panel{position: relative; width: 380px}
+#slide {background: #eee; width: 600px; height: 283px}
+#slide img { width: 735px; height: 345px }
+#slide div div{padding: 10px; z-index: 500}
+#slide div div p{line-height: 20px; text-align: justify}
+#slide div div h3{width: 85%}
+#slide div div h3 a{color: #369; text-decoration: none}
+
+/* Button panel, chỉ số z-index lớn hơn các thành phần khác để hiện thị bên trên */
+.button{position: absolute; bottom: 95px; right: 7px; z-index: 10}
+/* Next and prev button, sử dụng Sprite image */
+.prev,
+.next,
+.next:hover,
+.prev:hover
+		 {
+					display: block; 
+					width: 14px; 
+					height: 14px;
+					background: url(button.png) no-repeat; 
+					text-indent: -999999px;
+					float: left;
+					margin-right: 5px;
+					cursor: pointer
+		}
+.next {background-position: top left}
+.prev {background-position: bottom left}
+.next:hover {background-position: top right}
+.prev:hover {background-position: bottom right}
+
+/* Ewebvn info */
+.info{margin-top: 30px}
+p{line-height: 22px}

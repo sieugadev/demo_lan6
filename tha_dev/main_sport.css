@@ -1,0 +1,406 @@
+@charset "utf-8";
+/*  Thach Chanh Tha
+	Lop CTH10
+	Email:thachchanhtha@gamail.com
+	Copyright **2012 */
+#body
+		 {
+				 font-family: helvetica, arial, sans-serif;
+				 background:#CCC;
+				 text-align: center;
+		 }
+#banner 
+		{
+				position: absolute;
+				left: 131px;
+				top: 2px;
+				width: 1103px;
+				height: 37px;
+				z-index: 2;
+		}
+
+#logo1
+		 {
+				position: absolute;
+				left: 132px;
+				top: 5px;
+				width: 47px;
+				height: 32px;
+				z-index: 2;
+		}
+#hotline 
+		{
+				position: absolute;
+				left: 183px;
+				top: 1px;
+				width: 167px;
+				height: 35px;
+				z-index: 2;
+				font-weight: bold;
+				font-family: Georgia, "Times New Roman", Times, serif;
+				font-style: italic;
+		}		
+#dangnhap
+		 {
+				position: absolute;
+				left: 384px;
+				top: 0px;
+				width: 451px;
+				height: 34px;
+				z-index: 4;
+		}
+#dangkytv
+		 {
+				position: absolute;
+				left: 788px;
+				top: 4px;
+				width: 152px;
+				height: 36px;
+				z-index: 4;
+		}
+#quenmk 
+		{
+				position: absolute;
+				left: 939px;
+				top: 5px;
+				width: 139px;
+				height: 34px;
+				z-index: 4;
+		}
+#thongtin 
+		{
+				position: absolute;
+				left: 1085px;
+				top: 5px;
+				width: 151px;
+				height: 34px;
+				z-index: 5;
+		}
+#lienketface
+		 {
+				position: absolute;
+				left: 1236px;
+				top: 9px;
+				width: 81px;
+				height: 27px;
+				z-index: 9;
+		}
+#bannerSport
+		 {
+				position: absolute;
+				left: 132px;
+				top: 31px;
+				width: 1102px;
+				height: 134px;
+				z-index: 1;
+		}
+#menu
+	 {
+				position: absolute;
+				left: 132px;
+				top: 161px;
+				width: 1103px;
+				height: 112px;
+				z-index: 12;
+				background-image: url(../hinhanh/tool%20image/chanhtha1.jpg);
+				background-repeat: no-repeat;
+		}
+	
+#script 
+		{
+				position: absolute;
+				left: 130px;
+				top: 211px;
+				width: 1101px;
+				height: 339px;
+				z-index: 3;
+		}	
+#hotro1 
+		{
+				position: absolute;
+				left: 3px;
+				top: 0px;
+				width: 179px;
+				height: 30px;
+				z-index: 5;
+				background-image: url(../hinhanh/tool%20image/chanhtha1.jpg);
+				background-repeat: no-repeat;
+		}
+#hotro2 
+		{
+				position: absolute;
+				left: 2px;
+				top: 25px;
+				width: 182px;
+				height: 120px;
+				z-index: 5;
+				background-image: url(../hinhanh/tool%20image/chanhtha2.jpg);
+				background-repeat: repeat-y;
+		}
+#hotro3 
+		{
+				position: absolute;
+				left: 3px;
+				top: 145px;
+				width: 179px;
+				height: 13px;
+				z-index: 5;
+				background-image: url(../hinhanh/tool%20image/chanhtha3.jpg);
+				background-repeat: no-repeat;
+		}
+#giohang1 
+		{
+				position: absolute;
+				left: 3px;
+				top: 152px;
+				width: 180px;
+				height: 32px;
+				z-index: 5;
+				background-image: url(../hinhanh/tool%20image/chanhtha1.jpg);
+				background-repeat: no-repeat;
+		}
+#giohang2 
+		{
+				position: absolute;
+				left: 2px;
+				top: 178px;
+				width: 180px;
+				height: 149px;
+				z-index: 5;
+				background-image: url(../hinhanh/tool%20image/chanhtha2.jpg);
+				background-repeat: repeat-y;
+		}
+#giohang3
+		 {
+				position: absolute;
+				left: 2px;
+				top: 322px;
+				width: 180px;
+				height: 13px;
+				z-index: 5;
+				background-image: url(../hinhanh/tool%20image/chanhtha3.jpg);
+				background-repeat: no-repeat;
+		}	
+#sanpham1
+		 {
+				position: absolute;
+				left: 925px;
+				top: -1px;
+				width: 180px;
+				height: 29px;
+				z-index: 5;
+				background-image: url(../hinhanh/tool%20image/chanhtha1.jpg);
+				background-repeat: no-repeat;
+			}
+#sanpham2
+		 {
+				position: absolute;
+				left: 923px;
+				top: 28px;
+				width: 187px;
+				height: 180px;
+				z-index: 5;
+				background-image: url(../hinhanh/tool%20image/chanhtha2.jpg);
+				background-repeat: repeat-y;
+		}
+#sanpham3
+		 {
+				position: absolute;
+				left: 921px;
+				top: 190px;
+				width: 181px;
+				height: 18px;
+				z-index: 5;
+				background-image: url(../hinhanh/tool%20image/chanhtha3.jpg);
+				background-repeat: no-repeat;
+		}
+#truycap1
+	 {
+			position: absolute;
+			left: 922px;
+			top: 197px;
+			width: 180px;
+			height: 30px;
+			z-index: 5;
+			background-image: url(../hinhanh/tool%20image/chanhtha1.jpg);
+			background-repeat: no-repeat;
+	}
+#truycap2 
+		{
+				position: absolute;
+				left: 921px;
+				top: 221px;
+				width: 184px;
+				height: 100px;
+				z-index: 5;
+				background-image: url(../hinhanh/tool%20image/chanhtha2.jpg);
+				background-repeat: repeat-y;
+			}
+#truycap3 
+		{
+				position: absolute;
+				left: 920px;
+				top: 319px;
+				width: 179px;
+				height: 10px;
+				z-index: 5;
+				background-image: url(../hinhanh/tool%20image/chanhtha3.jpg);
+				background-repeat: no-repeat;
+		}
+#mainsp 
+		{
+				position: absolute;
+				left: 134px;
+				top: 203px;
+				width: 1098px;
+				height: 338px;
+				z-index: 2;
+				position:relative;
+				visibility:visible;
+		
+			}
+#trangthai 
+		{
+				position: absolute;
+				left: 981px;
+				top: 50px;
+				width: 249px;
+				height: 34px;
+				z-index: 6;
+				font-size:14px;
+				color:#900;
+				font-style:italic;
+				font-family:Georgia, "Times New Roman", Times, serif;
+				
+		}
+#dongho
+		 {
+				position: absolute;
+				left: 4px;
+				top: 1px;
+				width: 127px;
+				height: 111px;
+				z-index:9;
+		}
+#dangnhap
+		 {
+				position: absolute;
+				left: 350px;
+				top: 3px;
+				width: 445px;
+				height: 37px;
+				z-index: 5;
+	}
+#dongho
+		 {
+				position: absolute;
+				left: -5px;
+				top: -11px;
+				width: 97px;
+				height: 98px;
+				z-index: 13;
+		}
+#google 
+		{
+				position: absolute;
+				left: 1244px;
+				top: 75px;
+				width: 78px;
+				height: 29px;
+				z-index: 9;
+		}
+#twitter 
+		{
+				position: absolute;
+				left: 1238px;
+				top: 43px;
+				width: 77px;
+				height: 23px;
+				z-index: 9;
+		}
+#online1 
+		{
+				position: absolute;
+				left: 1060px;
+				top: 439px;
+				width: 158px;
+				height: 25px;
+				z-index: 6;
+				font-size:16px;
+				font-family:Georgia, "Times New Roman", Times, serif;
+				font-style:italic;
+		}
+#online2 a 
+		{
+				position: absolute;
+				left: 1066px;
+				top: 492px;
+				width: 157px;
+				height: 32px;
+				z-index: 6;
+				font-family: Georgia, "Times New Roman", Times, serif;
+				font-size: 16px;
+				font-style: italic;
+		}
+#kholienket 
+		{
+				position: absolute;
+				left: 1236px;
+				top: 1px;
+				width: 80px;
+				height: 107px;
+				z-index: 7;
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				border-radius: 10px;
+				-webkit-box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
+				-moz-box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
+				box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
+				background-color:#306;
+		}
+#bannertruot 
+		{
+				position: absolute;
+				left: 24px;
+				top: 325px;
+				width: 97px;
+				height: 163px;
+				z-index: 12;
+		}
+#framechinh
+	 {
+				position: absolute;
+				left: 132px;
+				top: 535px;
+				width: 1100px;
+				height: 1190px;
+				z-index: 1;
+				background: #FFF;
+		}
+#footer
+		 {
+				position: absolute;
+				left: 131px;
+				top: 1715px;
+				width: 1101px;
+				height: 96px;
+				z-index: 5;
+				background-color: #6666FF;
+				color: #69F;
+				-webkit-border-bottom-right-radius: 24px;
+				-webkit-border-bottom-left-radius: 24px;
+		}
+#diachi 
+		{
+				position: absolute;
+				left: 387px;
+				top: 1729px;
+				width: 664px;
+				height: 72px;
+				z-index: 14;
+				color: #000;
+				font-family: Georgia, "Times New Roman", Times, serif;
+				font-size: 18px;
+				font-style: italic;
+				padding:inherit;
+		}
