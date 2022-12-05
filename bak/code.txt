@@ -1,0 +1,8 @@
+//demo cart giỏ hàng
+Route::get('/show',[CartController::class,'show'])
+->name('show');
+Route::get('giohang/{id}',[CartController::class,'giohang'])
+->name('giohang');
+
+
+
